@@ -1,0 +1,17 @@
+# Documentation on setuptools & pyproject.toml - https://setuptools.pypa.io/en/latest/userguide/index.html
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db_qa_diff"
+version = "2.2.0"
+description = "QA to compare records between database tables"
+readme = "README.md"
+authors = [
+    {name = "James Midkiff", email = "james.midkiff@phila.gov"}
+    ]
+requires-python = ">=3.7"
+dependencies = [
+    "sqlalchemy>=2.0,<3.0", 
+    ]
